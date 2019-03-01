@@ -22,5 +22,8 @@
     "start": "node index.js",
     "dev": "jest --watch",
     "test": "jest"
+  },
+  "engines":{
+    "node": "10.x"
   }
 }

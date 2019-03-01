@@ -3,7 +3,16 @@ const faker = require('faker');
 const server = require('./server');
 
 describe('Dolittle Server', () => {
-    it('allows a message to be pushed and pulled', done => {
+    it('GET / redirects to the github page', done => {
+        request(server)
+            .get('/')
+            .then(res => {
+                expect(res.statusCode).toBe(301);
+                done();
+            });
+    });
+
+    it('POST /push and POST /pull let messages pass through', done => {
         let message = faker.lorem.paragraph();
         let topic = faker.random.uuid();
 

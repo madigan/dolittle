@@ -2,6 +2,8 @@
 
 Poor man's event bus. Allows clients to push and pull messages to in-memory queues. Absolutely no security whatsoever \o/
 
+Currently running on heroku: https://pacific-hamlet-10745.herokuapp.com/
+
 ## Operating Instructions
 
 Run `npm start` or `yarn start`
