@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.redirect(301, 'https://github.com/madigan/dolittle');
+    res.redirect(307, 'https://github.com/madigan/dolittle');
 });
 
 app.post('/push', (req, res) => {

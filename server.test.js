@@ -7,7 +7,7 @@ describe('Dolittle Server', () => {
         request(server)
             .get('/')
             .then(res => {
-                expect(res.statusCode).toBe(301);
+                expect(res.statusCode).toBe(307);
                 done();
             });
     });
